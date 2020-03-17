@@ -12,14 +12,16 @@ Aplikasi ini adalah sebuah simple web dengan php, tampilannya memang sederhana k
 
 ## Cara Login Dashboard Admin
 Untuk login kalian hanya perlu mengakses /login saja di direktori web yang sudah kalian simpan di htdoc.
-Contoh nama foldernya "web-wahyu", berarti kalian login dengan masuk ke localhost/web-wahyu/login
+Contoh nama foldernya `web-wahyu`, berarti kalian login dengan masuk ke `localhost/web-wahyu/login`
 
+<blockquote>
 username : admin
 passwrod : admin
+</blockquote>
 
 ## Database
 file sql database nya sudah saya sediakan, kalian cukup import saja ke mysql lewat phpmyadmin.
-Nama database defaultnya "dbwahyu", kalau mau diganti cukup nanti sesuaikan di file koneksi.php.
+Nama database defaultnya `dbwahyu`, kalau mau diganti cukup nanti sesuaikan di file `koneksi.php`.
 
 ## Referensi
 Saya lupa lagi ngambil referensi darimana aja, beberapa yang di ingat saya cantumkan
