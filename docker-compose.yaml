@@ -1,0 +1,23 @@
+version: '3'
+services:
+  apps_blog:
+    image: webserver:1.0-tresnax
+    container_name: app_blog
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html/
+    #command: bash -c "apache2-foreground"
+  
+  data_blog:
+    image: mysql:5.7
+    container_name: db_blog
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: c0c0d0tb4u
+      MYSQL_DATABASE: dbwahyu
+    volumes:
+      - ../mysql-data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    
